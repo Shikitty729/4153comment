@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Queries</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Comment Query System</h1>
+        <div class="row mt-4">
+            <!-- Query All Comments -->
+            <div class="col-md-6">
+                <button id="query-all-comments" class="btn btn-primary btn-block">Query All Comments</button>
+            </div>
+            <!-- Query All Comment1 -->
+            <div class="col-md-6">
+                <button id="query-all-comment1" class="btn btn-secondary btn-block">Query All Comment1</button>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Query All Comment2 -->
+            <div class="col-md-6">
+                <button id="query-all-comment2" class="btn btn-info btn-block">Query All Comment2</button>
+            </div>
+            <!-- Query Comment1 by post_id -->
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="number" id="post-id" class="form-control" placeholder="Enter post_id">
+                    <div class="input-group-append">
+                        <button id="query-comment1-post" class="btn btn-warning">Query Comment1 by post_id</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- Query Comment2 by comment1_id -->
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="number" id="comment1-id" class="form-control" placeholder="Enter comment1_id">
+                    <div class="input-group-append">
+                        <button id="query-comment2-comment1" class="btn btn-success">Query Comment2 by comment1_id</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Result Display -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h4 class="text-center">Results</h4>
+                <pre id="results" class="bg-light p-3"></pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Helper function to render results
+        function renderResults(data) {
+            $('#results').text(JSON.stringify(data, null, 2));
+        }
+
+        // Event listener for querying all comments
+        $('#query-all-comments').click(function () {
+            $.get('/comments/get_all_comments/', function (data) {
+                renderResults(data);
+            });
+        });
+
+        // Event listener for querying all Comment1
+        $('#query-all-comment1').click(function () {
+            $.get('/comments/get_all_comment1/', function (data) {
+                renderResults(data);
+            });
+        });
+
+        // Event listener for querying all Comment2
+        $('#query-all-comment2').click(function () {
+            $.get('/comments/get_all_comment2/', function (data) {
+                renderResults(data);
+            });
+        });
+
+        // Event listener for querying Comment1 by post_id
+        $('#query-comment1-post').click(function () {
+            let post_id = $('#post-id').val();
+            if (post_id) {
+                $.get(`/comments/get_comment1_by_post_id/${post_id}/`, function (data) {
+                    renderResults(data);
+                });
+            } else {
+                alert('Please enter a post_id');
+            }
+        });
+
+        // Event listener for querying Comment2 by comment1_id
+        $('#query-comment2-comment1').click(function () {
+            let comment1_id = $('#comment1-id').val();
+            if (comment1_id) {
+                $.get(`/comments/get_comment2_by_comment1_id/${comment1_id}/`, function (data) {
+                    renderResults(data);
+                });
+            } else {
+                alert('Please enter a comment1_id');
+            }
+        });
+    </script>
+</body>
+
+</html>
