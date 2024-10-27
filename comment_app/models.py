@@ -7,7 +7,7 @@ class Comment1(models.Model):
     likes = models.IntegerField(default=0)
 
     def __str__(self):
-        return f'Comment1: {self.content[:20]}'
+        return f"Comment1 on post {self.post_id} by {self.writter_uni}"
 
 class Comment2(models.Model):
     comment1 = models.ForeignKey(Comment1, related_name='replies', on_delete=models.CASCADE)
@@ -16,4 +16,4 @@ class Comment2(models.Model):
     likes = models.IntegerField(default=0)
 
     def __str__(self):
-        return f'Comment2: {self.content[:20]}'
+        return f"Comment2 by {self.writter_uni} related to Comment1 ID {self.comment1.id}"
