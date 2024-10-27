@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91c0ffc2-9926-40e4-9a7f-7d23e4b29ca6" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/my.cnf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment_app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment_app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comment_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/comments.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/comments.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment4153/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment4153/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comment4153/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/comment4153/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Django 服务器.comment4153.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/4153blog&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django 服务器.comment4153.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/4153blog",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="comment4153" type="Python.DjangoServer" factoryName="Django server">
       <module name="comment4153" />
@@ -99,7 +98,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729925686615</updated>
       <workItem from="1729925687994" duration="3776000" />
-      <workItem from="1729984446554" duration="4823000" />
+      <workItem from="1729984446554" duration="10644000" />
     </task>
     <servers />
   </component>

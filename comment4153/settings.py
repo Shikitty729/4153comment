@@ -75,16 +75,17 @@ WSGI_APPLICATION = "comment4153.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'comment',
-        'USER': 'root',
-        'PASSWORD': '729666',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "OPTIONS": {
+            "read_default_file": "./my.cnf",
+            "ssl": None,  # 禁用 SSL 连接
+        },
     }
 }
+
 
 
 
